@@ -1,0 +1,119 @@
+/* Hero Section */
+.route-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Optim Section */
+.route-optim {
+  padding: 50px;
+  background: #ffffff;
+}
+
+.optim-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.optim {
+  flex: 1;
+  min-width: 250px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.optim:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.optim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adds opacity to the background image */
+  z-index: 1;
+}
+
+.optim h3, .optim p {
+  position: relative;
+  z-index: 2;
+}
+
+.optim-bg1 {
+  background-image: url('/public/ro1.png');
+}
+
+.optim-bg2 {
+  background-image: url('/public/ro2.jpg');
+}
+
+.optim-bg3 {
+  background-image: url('/public/ro3.webp');
+}
+
+.optim-bg4 {
+  background-image: url('/public/ro4.jpg');
+}
+
+/* Benefits Section */
+.route-benefits {
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+.route-benefits ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+/* Call-to-Action Section */
+.route-cta {
+  text-align: center;
+  padding: 50px;
+  background: #007bff;
+  color: white;
+}
+
+.route-cta .cta-button {
+  background: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.route-cta .cta-button:hover {
+  background: #003f7f;
+}

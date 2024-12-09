@@ -1,0 +1,153 @@
+/* General Styles */
+.analytics-reports {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .reports-hero {
+    background: linear-gradient(to right, #008cba, #007bff);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('/public/analy.jpg');
+  }
+  
+  .reports-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .reports-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .reports-hero .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+
+  }
+  
+  /* Features Section */
+  .reports-features {
+    background: #140b5a;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .reports-features h2 {
+    margin-bottom: 20px;
+    color: aliceblue;
+  }
+  
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+  .feature feature-bg1 h3{
+    color: aliceblue;
+  }
+  }
+  
+  .feature {
+    background-size: cover;
+    background-position: center;
+    /* background: red; */
+    border-radius: 10px;
+    padding: 20px;
+    /* max-height: 500px; */
+    max-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.feature-bg1 {
+    background-image: url('/public/ar1.jpg');
+  }
+  
+  .feature-bg2 {
+    background-image: url('/public/ar2.jpg');
+  }
+  
+  .feature-bg3 {
+    background-image: url('/public/ar3.png');
+  }
+  
+  .feature-bg4 {
+    background-image: url('/public/ar4.png');
+  }
+  
+  .feature h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: aliceblue;
+  }
+  .feature h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: rgb(30, 2, 2);
+  }
+  .feature p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Benefits Section */
+  .reports-benefits {
+    padding: 40px 20px;
+    background-color: #140b5a;
+  }
+  
+  .reports-benefits h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .reports-benefits ul {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .reports-benefits ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .reports-benefits ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  
+  /* Call-to-Action Section */
+  .reports-cta {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .reports-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  

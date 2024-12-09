@@ -1,0 +1,102 @@
+/* Hero Section */
+.maintenance-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #4542e4;
+  background-image: url('/public/mmm.svg');
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Highlights Section */
+.maintenance-highlights {
+  padding: 50px;
+  background: rgb(183, 222, 234);
+}
+
+.highlight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.highlight {
+  flex: 1;
+  min-width: 250px;
+  height: 200px;
+  color: rgb(13, 1, 1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-bg1 {
+  background-image: url('/public/sm1.jpg');
+}
+
+.highlight-bg2 {
+  background-image: url('/public/sm2.webp');
+}
+
+.highlight-bg3 {
+  background-image: url('/public/sm3.png');
+}
+
+.highlight-bg4 {
+  background-image: url('/public/sm4.webp');
+}
+
+/* Benefits Section */
+.maintenance-benefits {
+  padding: 50px;
+  background: rgb(148, 216, 237);
+}
+
+.maintenance-benefits ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+/* Call-to-Action Section */
+.maintenance-cta {
+  text-align: center;
+  padding: 50px;
+  background: #007bff;
+  color: white;
+}
+
+.maintenance-cta .cta-button {
+  background: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.maintenance-cta .cta-button:hover {
+  background: #003f7f;
+}
