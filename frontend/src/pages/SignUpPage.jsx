@@ -16,7 +16,7 @@ const SignUpPage = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', formData, {
+      const res = await axios.post('http://localhost:8001/api/users/register', formData, {
         withCredentials: true,
       });
       alert(res.data.message || 'Signup successful!');

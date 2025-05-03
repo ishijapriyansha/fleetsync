@@ -26,15 +26,16 @@ const RouteOptimization = () => {
             <h3>Real-Time Traffic Data</h3>
             <p>Integrate real-time traffic data to adjust routes dynamically.</p>
           </a>
-          <a href="/route-planning" className="optim optim-bg2">
+          <a href="/routeplanning" className="optim optim-bg2">
             <h3>Route Planning</h3>
             <p>Plan the most efficient routes considering various factors like distance and fuel consumption.</p>
           </a>
-          <a href="/time-savings" className="optim optim-bg3">
+          <a href="timesaving" className="optim optim-bg3">
             <h3>Time Savings</h3>
+            
             <p>Save time by minimizing detours and traffic-heavy areas.</p>
           </a>
-          <a href="/cost-savings" className="optim optim-bg4">
+          <a href="/costsaving" className="optim optim-bg4">
             <h3>Cost Savings</h3>
             <p>Reduce fuel consumption by optimizing vehicle routes.</p>
           </a>

@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './AnalyticsReports.css'; 
 import Navbar from './Navbar';
-
+import axios from 'axios';
 
 const AnalyticsReports = () => {
+  const [reports, setReports] = useState(null);
+
+  // Fetch data from API on component mount
+  useEffect(() => {
+    const fetchReports = async () => {
+      try {
+        const response = await axios.get('/api/fleet/report');  // Your backend API endpoint
+        setReports(response.data);
+      } catch (error) {
+        console.error('Error fetching reports:', error);
+      }
+    };
+
+    fetchReports();
+  }, []);
+
   return (
     <div className="analytics-reports">
       <Navbar />
+      
       {/* Hero Section */}
       <header className="reports-hero">
         <div className="hero-content">
@@ -14,6 +31,7 @@ const AnalyticsReports = () => {
           <p>Gain valuable insights into your fleet’s performance with powerful analytics and reports.</p>
         </div>
         <div className="hero-image">
+          {/* Add an image if needed */}
           {/* <img src="analys.jpg" alt="Analytics and Reports" /> */}
         </div>
       </header>
@@ -22,25 +40,27 @@ const AnalyticsReports = () => {
       <section className="reports-features">
         <h2>Key Features of Analytics & Reports</h2>
         <div className="feature-list">
-            {/* <div className='feature'></div> */}
-          <div className="feature feature-bg1 ">
-            <h3 color='white' >Real-Time Data Visualization</h3>
+          <div className="feature feature-bg1">
+            <a href="/real-time">
+            <h3>Real-Time Data Visualization</h3></a>
             <p>Interactive dashboards to visualize fleet performance metrics in real time.</p>
           </div>
           
           <div className="feature feature-bg2">
-            <h3>Fleet Performance Reports</h3>
+            <a href="/fleet-report">
+            <h3>Fleet Performance Reports</h3></a>
             <p>Generate detailed reports on fuel usage, speed, maintenance costs, and more.</p>
           </div>
           <div className="feature feature-bg3">
-            <h4>Customizable Reports</h4>
+            <a href="/custom-report">
+            <h4>Customizable Reports</h4></a>
             <p>Customize and export reports based on specific fleet or driver parameters.</p>
           </div>
           <div className="feature feature-bg4">
-            <h4>Cost Analysis</h4>
+            <a href="/cost-analysis">
+            <h4>Cost Analysis</h4></a>
             <p>Analyze and track costs related to fuel consumption, maintenance, and vehicle usage.</p>
           </div>
-          
         </div>
       </section>
 
@@ -59,11 +79,44 @@ const AnalyticsReports = () => {
           
           {/* Right Side - Video */}
           <div className="info-right">
-            <video width="100%" autoPlay loop muted >
+            <video width="100%" autoPlay loop muted>
               <source src="arvbg.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
+        </div>
+      </section>
+
+      {/* Fleet Report Table Section - Dynamically render report data */}
+      <section className="fleet-report-section">
+        <h2>Fleet Performance Report</h2>
+        <div className="report-table">
+          {reports ? (
+            <table>
+              <thead>
+                <tr>
+                  <th>Vehicle ID</th>
+                  <th>Fuel Usage</th>
+                  <th>Maintenance Costs</th>
+                  <th>Average Speed</th>
+                  <th>Distance Covered</th>
+                </tr>
+              </thead>
+              <tbody>
+                {reports.map((report, index) => (
+                  <tr key={index}>
+                    <td>{report.vehicleId}</td>
+                    <td>{report.fuelUsage} liters</td>
+                    <td>${report.maintenanceCost}</td>
+                    <td>{report.averageSpeed} km/h</td>
+                    <td>{report.distanceCovered} km</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <p>Loading reports...</p>
+          )}
         </div>
       </section>
 
