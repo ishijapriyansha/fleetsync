@@ -13,6 +13,11 @@ import RealTime from './pages/RealTime';
 import TimeSaving from './pages/TimeSaving';
 import CostSaving from './pages/CostSaving';
 import RoutePlanning from './pages/RoutePlanning';
+import AutomatedReminder from './pages/AutomatedReminder';
+import MaintenanceHistory from './pages/MaintenanceHistory';
+import ScheduledMaintenance from './pages/ScheduledMaintenance';
+import CostTracking from './pages/CostTracking';
+import LiveTracking from './pages/LiveTracking';
 
 
 // import AuthPage from './pages/AuthPage';
@@ -35,10 +40,15 @@ function App() {
         <Route path='/real-time' element={<RealTime/>} />  
         <Route path='/timesaving' element={<TimeSaving/>} /> 
         <Route path='/costsaving' element={<CostSaving/>} />
-        <Route path='/routeplanning' element={<RoutePlanning/>} />   
+        <Route path='/routeplanning' element={<RoutePlanning/>} /> 
+        <Route path='/automatedreminder' element={<AutomatedReminder/>} />   
+        <Route path='/maintenancehistory' element={<MaintenanceHistory/>} />
+        <Route path='/scheduledmaintenance' element={<ScheduledMaintenance/>} />
+        <Route path='/cost-tracking' element={<CostTracking/>} />
+        <Route path='/livetracking' element={<LiveTracking/>} />
 
-
-
+        
+        
         
 
         

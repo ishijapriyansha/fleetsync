@@ -1,0 +1,77 @@
+/* Cost Analysis - Full screen with GIF background */
+.page{
+    background-image: url('/public/costanalysis.gif');
+}
+.cost-container {
+    height: 100vh;
+    width: 100vw;
+     /* Your GIF URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: #cfddeb00;
+    background-attachment: fixed; /* Keeps the GIF fixed when scrolling */
+  }
+  
+  /* Centered card container */
+  .table-wrapper {
+    background-color: rgba(237, 232, 232, 0); /* Slight transparency to see background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1200px;
+    overflow-x: auto;
+  }
+  
+  /* Title styling */
+  .heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Table formatting */
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .cost-table th,
+  .cost-table td {
+    border: 1px solid #e1d6d6;
+    padding: 15px 20px;
+    color: #333;
+  }
+  
+  .cost-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cost-table tbody tr:hover {
+    background-color: #e13f3f;
+  }
+  
+  .cost-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .cost-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .cost-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  

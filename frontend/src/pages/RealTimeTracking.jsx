@@ -15,10 +15,14 @@ const RealTimeTracking = () => {
 
       {/* Features Section */}
       <section className="tracking-features">
+        
         <h2>Key Features</h2>
+        
         <div className="tracking-feature-list">
           <div className="tracking-feature features-bg1">
+          <a href="livetracking">
             <h3>Live GPS Tracking</h3>
+            </a>
             <p>Track your vehicles in real-time with precise GPS data.</p>
           </div>
           <div className="tracking-feature features-bg2">

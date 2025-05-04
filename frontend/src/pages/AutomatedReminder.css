@@ -1,0 +1,92 @@
+.reminder-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reminder-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .input,
+  .textarea,
+  .date-picker,
+  select {
+    padding: 0.6rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .input:focus,
+  .textarea:focus,
+  .date-picker:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  .add-btn {
+    padding: 0.6rem;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .add-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .section {
+    margin-top: 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #334155;
+  }
+  
+  .reminder-card,
+  .history-card {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .reminder-card h3,
+  .history-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .reminder-card span,
+  .history-card span {
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  

@@ -1,0 +1,63 @@
+/* Full screen background container */
+.fleet-container {
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url('/');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Card container */
+  .table-wrapper {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1200px;
+    overflow-x: auto;
+  }
+  
+  /* Heading style */
+  .heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #222;
+  }
+  
+  /* Table formatting */
+  .fleet-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .fleet-table th,
+  .fleet-table td {
+    border: 1px solid #ccc;
+    padding: 14px 18px;
+    color: #333;
+  }
+  
+  .fleet-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .fleet-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .fleet-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  

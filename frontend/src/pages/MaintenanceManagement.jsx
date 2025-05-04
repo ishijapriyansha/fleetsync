@@ -22,15 +22,15 @@ const MaintenanceManagement = () => {
       <section className="maintenance-highlights">
         <h2 >Key Highlights of Maintenance Management</h2>
         <div className="highlight-list">
-          <a href="/automated-reminders" className="highlight highlight-bg1">
+          <a href="/automatedreminder" className="highlight highlight-bg1">
             <h3>Automated Reminders</h3>
             <p>Get notified about upcoming maintenance tasks before they become urgent.</p>
           </a>
-          <a href="/maintenance-history" className="highlight highlight-bg2">
+          <a href="/maintenancehistory" className="highlight highlight-bg2">
             <h3>Maintenance History</h3>
             <p>Track the history of each vehicle’s maintenance activities and costs.</p>
           </a>
-          <a href="/scheduled-maintenance" className="highlight highlight-bg3">
+          <a href="/scheduledmaintenance" className="highlight highlight-bg3">
             <h3>Scheduled Maintenance</h3>
             <p>Schedule maintenance tasks in advance to ensure optimal vehicle performance.</p>
           </a>

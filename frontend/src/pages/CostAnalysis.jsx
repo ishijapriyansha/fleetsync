@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './CostAnalysis.css';  // Importing the CSS file
 
 function CostAnalysis() {
   const [data, setData] = useState([]);
@@ -10,28 +11,33 @@ function CostAnalysis() {
   }, []);
 
   return (
-    <div>
-      <h2>💰 Cost Analysis</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Route</th>
-            <th>Total Cost</th>
-            <th>Total Revenue</th>
-            <th>Total Profit</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((row, idx) => (
-            <tr key={idx}>
-              <td>{row.from} → {row.to}</td>
-              <td>{row.totalCost}</td>
-              <td>{row.totalRevenue}</td>
-              <td>{row.totalProfit}</td>
+    <div className='page'>
+    <div className="cost-container"> {/* Main wrapper for centering */}
+      <div className="table-wrapper">
+        <h2 className="heading">💰 Cost Analysis</h2>
+
+        <table className="cost-table">
+          <thead>
+            <tr>
+              <th>Route</th>
+              <th>Total Cost</th>
+              <th>Total Revenue</th>
+              <th>Total Profit</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row.from} → {row.to}</td>
+                <td>{row.totalCost}</td>
+                <td>{row.totalRevenue}</td>
+                <td>{row.totalProfit}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
     </div>
   );
 }

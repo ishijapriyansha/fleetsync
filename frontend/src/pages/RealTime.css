@@ -1,55 +1,96 @@
-/* Set full screen and background */
+/* Full screen layout with background */
 .realtime-container {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1650&q=60');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-  }
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/public/realtime1.732ea03d-8a6a-4808-9dc1-9aff56401b62');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+}
+
+/* Centered card with table */
+.table-wrapper {
+  /* background-image: url('/public/realtime1.732ea03d-8a6a-4808-9dc1-9aff56401b62'); */
+  background-color: rgba(99, 34, 196, 0.304);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  max-width: 1300px;
+  overflow-x: auto;
+}
+
+/* Title styling */
+.heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #2ef220;
+  text-decoration-color: #f2f9ff;
+}
+
+/* Table styling */
+.fleet-table {
   
-  /* Centered card container */
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #1f1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #a0eae8;
+}
+
+/* Header row */
+.fleet-table thead {
+  background-color: #3498db;
+  color: rgb(33, 31, 31);
+  font-weight: bold;
+}
+
+/* All cells */
+.fleet-table th,
+.fleet-table td {
+  padding: 18px 20px;
+  border: 1px solid #0a0909;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* Row hover effect */
+.fleet-table tbody tr:hover {
+  background-color: #f2f9ff;
+  transition: background 0.3s ease;
+}
+
+/* Rounded corners for first and last header cells */
+.fleet-table th:first-child {
+  border-top-left-radius: 12px;
+}
+.fleet-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
   .table-wrapper {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 1100px;
-    overflow-x: auto;
+    padding: 20px;
   }
-  
-  /* Title styling */
-  .heading {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Table formatting */
-  .fleet-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-  }
-  
+
   .fleet-table th,
   .fleet-table td {
-    border: 1px solid #ccc;
-    padding: 12px 16px;
-    color: #333;
+    padding: 12px;
+    font-size: 13px;
   }
-  
-  .fleet-table thead {
-    background-color: #f4f4f4;
+
+  .heading {
+    font-size: 24px;
   }
-  
-  .fleet-table tbody tr:hover {
-    background-color: #f9f9f9;
-  }
-  
+}
