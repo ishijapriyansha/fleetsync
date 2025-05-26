@@ -1,4 +1,3 @@
-version: '3'
 services:
   client:
     build: ./frontend
@@ -15,6 +14,7 @@ services:
       - MONGO_URL=mongodb://mongo:27017/db2
     depends_on:
       - mongo
+    platform: linux/amd64
 
   mongo:
     image: mongo:6
